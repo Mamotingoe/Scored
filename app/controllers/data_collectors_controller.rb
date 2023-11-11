@@ -1,0 +1,2 @@
+class DataCollectorsController < ApplicationController
+end
