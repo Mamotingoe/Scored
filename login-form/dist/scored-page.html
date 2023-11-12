@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You've Been Scored</title>
+    <style>
+        .credit-score-image {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
 
     <h2>You've Been Scored</h2>
 
-    <!-- Content for the scored page goes here -->
+    <img class="credit-score-image" src="dbz1.png" alt="Very Low">
+    <img class="credit-score-image" src="dbz3.png" alt="Low">
+    <img class="credit-score-image" src="dbz5.png" alt="Good">
+    <img class="credit-score-image" src="dbz7.png" alt="Excellent">
+
+    <script>
+      var creditScore = 410; // Replace this with the user's credit score
+
+      if (creditScore < 580) {
+        // Display image 1
+        document.querySelector('.credit-score-image[alt="Very Low Credit Score"]').classList.remove('hidden');
+      } else if (creditScore < 670) {
+        // Display image 2
+        document.querySelector('.credit-score-image[alt="Low Credit Score"]').classList.remove('hidden');
+      } else if (creditScore < 800) {
+        // Display image 3
+        document.querySelector('.credit-score-image[alt="Good Credit Score"]').classList.remove('hidden');
+      } else {
+        // Display image 4
+        document.querySelector('.credit-score-image[alt="Excellent Credit Score"]').classList.remove('hidden');
+      }
+    </script>
 
 </body>
 </html>
