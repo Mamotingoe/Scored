@@ -1,32 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Login form</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content=""IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scored</title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel= "stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<main>
 
-        <section class="form__animation">
-            <div id="ball">
-                <div class="ball">
-                    <div id="face">
-                        <div class="ball__eyes">
-                            <div class="eye_wrap"><span class="eye"></span></div>
-                            <div class="eye_wrap"><span class="eye"></span></div>
-                        </div>
-                        <div class="ball__mouth"></div>
-                    </div>
-                </div>
-              </div>
-              <div class="ball__shadow"></div>
-        </section>
-    </main>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <div class="wrapper"></div>
+  <form action="/home/mamotingoe/code/Mamotingoe/Scored/login-form/dist/scored-page.html" method="post" enctype="multipart/form-data">
+
+    <h2>What's my credit like?</h2>
+    <div class="input-box">
+      <div class="input-field">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="maritalStatus">Marital Status:</label>
+        <select id="maritalStatus" name="maritalStatus" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="educationLevel">Education Level:</label>
+        <input type="text" id="educationLevel" name="educationLevel" required><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="employmentStatus">Employment Status:</label>
+        <select id="employmentStatus" name="employmentStatus" required>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Self-employed</option>
+        </select><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="ecommerceStore">Most Used E-commerce Store:</label>
+        <input type="text" id="ecommerceStore" name="ecommerceStore" required><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="socialMediaHandle">Social Media Handle:</label>
+        <input type="text" id="socialMediaHandle" name="socialMediaHandle" required><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx"><br>
+      </div>
+    </div>
+
+        <div class="input-box">
+          <div class="input-field">
+        <input type="submit" class="btn" value="Submit">
+      </div>
+    </div>
+
+    </form>
 
 </body>
 </html>
